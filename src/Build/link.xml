@@ -1,0 +1,153 @@
+<linker>
+  <assembly fullname="AllIn1SpriteShaderAssembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="AllIn1SpriteShader.AllIn1Shader" preserve="all" />
+  </assembly>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="BulletPro.BulletEmitter" preserve="all" />
+    <type fullname="BulletPro.BulletParams" preserve="all" />
+    <type fullname="BulletPro.BulletReceiver" preserve="all" />
+    <type fullname="BulletPro.EmitterProfile" preserve="all" />
+    <type fullname="BulletPro.PatternParams" preserve="all" />
+    <type fullname="BulletPro.ShotParams" preserve="all" />
+    <type fullname="IronSky.Aircraft.AircraftControl" preserve="all" />
+    <type fullname="IronSky.Aircraft.AircraftEffect" preserve="all" />
+    <type fullname="IronSky.Aircraft.AircraftMover" preserve="all" />
+    <type fullname="IronSky.Aircraft.AircraftStatsData" preserve="all" />
+    <type fullname="IronSky.Aircraft.AircraftVisual" preserve="all" />
+    <type fullname="IronSky.Aircraft.AtlasRegionAttacher" preserve="all" />
+    <type fullname="IronSky.Aircraft.WarningEnemy" preserve="all" />
+    <type fullname="IronSky.Aircraft.WingmanControl" preserve="all" />
+    <type fullname="ShmupBoss.AIMover" preserve="all" />
+    <type fullname="ShmupBoss.Boss" preserve="all" />
+    <type fullname="ShmupBoss.BossSubPhase" preserve="all" />
+    <type fullname="ShmupBoss.CircularRotator" preserve="all" />
+    <type fullname="ShmupBoss.CurveMover" preserve="all" />
+    <type fullname="ShmupBoss.CurveWaveData" preserve="all" />
+    <type fullname="ShmupBoss.Enemy" preserve="all" />
+    <type fullname="ShmupBoss.FiniteSpawner" preserve="all" />
+    <type fullname="ShmupBoss.FxSpawnerEnemy" preserve="all" />
+    <type fullname="ShmupBoss.FxSpawnerPlayer" preserve="all" />
+    <type fullname="ShmupBoss.MagnetMover" preserve="all" />
+    <type fullname="ShmupBoss.Pickup" preserve="all" />
+    <type fullname="ShmupBoss.Player" preserve="all" />
+    <type fullname="ShmupBoss.PositionMover" preserve="all" />
+    <type fullname="ShmupBoss.SfxEnemy" preserve="all" />
+    <type fullname="ShmupBoss.SfxPlayer" preserve="all" />
+    <type fullname="ShmupBoss.SideSpawnableWaveData" preserve="all" />
+    <type fullname="ShmupBoss.SimpleMover" preserve="all" />
+    <type fullname="ShmupBoss.TrackerMover" preserve="all" />
+    <type fullname="ShmupBoss.TrackerPlayer" preserve="all" />
+    <type fullname="ShmupBoss.WaypointMover" preserve="all" />
+    <type fullname="ShmupBoss.WaypointWaveData" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonAnimation" preserve="all" />
+    <type fullname="Spine.Unity.SkeletonDataAsset" preserve="all" />
+    <type fullname="Spine.Unity.SpineAtlasAsset" preserve="all" />
+    <type fullname="BulletPro.BulletCollider" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.BulletCurve" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.BulletOutputTexture" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.BulletPreview" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.BulletSortDirection" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.BulletSpawn" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.BulletVFXTrigger" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.CollisionTagAction" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.CollisionTags" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.CurvePeriodType" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicAnimationCurve" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicAnimationCurveValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicBool" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicBoolValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicBullet" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicBulletCurve" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicBulletVFXParams" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicBulletValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicColor" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicColorValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicCustomParameter" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicEnum" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicEnumValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicFloat" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicFloatValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicGradient" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicGradientValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicInt" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicIntValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicObjectReference" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicObjectReferenceValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicParameterSettings" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicPattern" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicPatternValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicRect" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicRectValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicShot" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicShotValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicSlider01" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicSlider01Value" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicString" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicStringValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicVector2" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicVector2Value" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicVector3" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicVector3Value" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicVector4" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.DynamicVector4Value" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.HitByBulletEvent" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.InstructionTiming" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.InterpolationValue" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.PatternControlTarget" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.PatternCurveType" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.PatternInstruction" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.PatternInstructionList" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.PatternInstructionType" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.VFXFilterType" preserve="nothing" serialized="true" />
+    <type fullname="BulletPro.VFXPlayType" preserve="nothing" serialized="true" />
+    <type fullname="IronSky.Aircraft.AtlasRegionAttacher/SlotRegionPair" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.BossPhase" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.Drop" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.Path" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.PickupEffect" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.VolumetricAC" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.Wave" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.Waypoint2D" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.volumetricACTriggeredByEnemyEvent" preserve="nothing" serialized="true" />
+    <type fullname="ShmupBoss.volumetricACTriggeredByPlayerEvent" preserve="nothing" serialized="true" />
+    <type fullname="Spine.Unity.SkeletonRenderer/SpriteMaskInteractionMaterials" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.CircleCollider2D" preserve="all" />
+    <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
+  </assembly>
+</linker>
