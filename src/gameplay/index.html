@@ -3,25 +3,256 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Shmup</title>
+    <title>Unity WebGL Player | IronSky</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      #first-page {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          background-image: url('./background.jpg');
+          background-size: cover;
+          background-position: center;
+          overflow: hidden;
+      }
+
+      header {
+          flex-shrink: 0;
+          position: relative;
+      }
+
+      header .bg-header {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+
+      header .logo {
+          position: absolute;
+          height: 60%;
+          width: auto;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+
+      main {
+          flex: 1;
+          position: relative;
+      }
+
+      main button {
+          background-color: transparent;
+          padding: 0;
+          outline: none;
+          box-shadow: none;
+          border: none;
+          position: absolute;
+          width: 28%;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 8%;
+          transition: all .3s;
+          cursor: pointer;
+      }
+
+      main button:hover {
+          transform: translateX(-50%) scale(1.03);
+      }
+
+      main button img {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+
+      footer {
+          flex-shrink: 0;
+          position: relative;
+      }
+
+      footer .bg-footer {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+
+      .footer-content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+      }
+
+      .footer-menu {
+          height: 60%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          position: relative;
+          gap: 2%;
+      }
+
+      .footer-menu .center {
+          flex: 0 0 6.25%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .footer-menu .left, .footer-menu .right {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+          align-items: center;
+      }
+
+      .footer-menu .left {
+          justify-content: flex-end;
+      }
+
+      .left a, .right a {
+          display: block;
+          height: 25%;
+          margin: 0 5%;
+      }
+
+      .left a img, .right a img, .center a img {
+          width: auto;
+          height: 100%;
+          object-fit: contain;
+      }
+
+      .center a {
+          display: block;
+          width: 100%;
+          padding: 0 4px;
+          position: relative;
+      }
+
+      .center a .lang {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+
+      .center a .lang-up, .center a .lang-down {
+          position: absolute;
+          left: 50%;
+          width: 16%;
+          height: auto;
+      }
+
+      .center a .lang-up {
+          transform: translateX(-50%) translateY(-200%);
+      }
+
+      .center a .lang-down {
+          transform: translateX(-50%) translateY(200%);
+      }
+
+      .footer-menu .btn-support {
+          position: absolute;
+          right: 2.5%;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 56%;
+      }
+
+      .footer-menu .btn-support img {
+          height: 100%;
+          width: auto;
+      }
+
+      .footer-bottom {
+          height: 28%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+      }
+
+      .footer-bottom img {
+          height: 50%;
+          width: auto;
+      }
+
+      #unity-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div id="first-page">
+      <header id="header">
+          <img class="bg-header" src="./header.png" />
+          <img class="logo" src="./logo.png" alt="">
+      </header>
+      <main>
+          <button id="btn-play" onclick="showGame()">
+              <img src="./btn-play.png" alt="">
+          </button>
+      </main>
+      <div id="unity-container" class="unity-desktop" style="display: none;">
+        <canvas id="unity-canvas" width=960 height=540></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
         </div>
-      </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Shmup</div>
-      </div>
+        <div id="unity-warning"> </div>
+        <div id="unity-footer">
+          <!-- <div id="unity-webgl-logo"></div> -->
+          <div id="unity-fullscreen-button"></div>
+          <!-- <div id="unity-build-title">IronSky</div> -->
+        </div>
+      </div>  
+      <footer>
+          <img class="bg-footer" src="./footer.png" />
+          <div class="footer-content">
+              <div class="footer-menu">
+                  <div class="left">
+                      <a target="_blank" href="https://marketplace.ironsky.games/marketplace/aircraft"><img src="./MARKET.png" alt=""></a>
+                      <a target="_blank" href="https://marketplace.ironsky.games/earn/staking"><img src="./STAKING.png" alt=""></a>
+                  </div>
+                  <div class="center">
+                      <a href="">
+                          <img class="lang-up" src="./lang_up_off.png" alt="">
+                          <img class="lang" src="./ENGLISH.png" alt="">
+                          <img class="lang-down" src="./lang_down_off.png" alt="">
+                      </a>
+                  </div>
+                  <div class="right">
+                      <a target="_blank" href="https://ironsky.info"><img src="./NEWS.png" alt=""></a>
+                      <a target="_blank" href="https://marketplace.ironsky.games/account/deposit"><img src="./PROFILE.png" alt=""></a>
+                  </div>
+                  <a target="_blank" href="https://discord.com/channels/957329983175524352/1031765853651345478" class="btn-support">
+                      <img src="./btn-support.png" alt="">
+                  </a>
+              </div>
+              <div class="footer-bottom">
+                  <img src="./bottom-text.png" alt="">
+              </div>
+          </div>
+      </footer>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -63,7 +294,7 @@
         codeUrl: buildUrl + "/gameplay.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Shmup",
+        productName: "IronSky",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -94,27 +325,34 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
 
       canvas.style.background = "url('" + buildUrl + "/gameplay.jpg') center / cover";
       loadingBar.style.display = "block";
 
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
+      function showGame() {
+          document.getElementById('unity-container').style.display = 'block';
+          document.getElementById('btn-play').style.display = 'none';
+          document.getElementById('header').style.display = 'none';
+          document.getElementById('first-page').style['background-image'] = 'none';
+
+          var script = document.createElement("script");
+          script.src = loaderUrl;
+          script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+              progressBarFull.style.width = 100 * progress + "%";
+            }).then((unityInstance) => {
+              loadingBar.style.display = "none";
+              fullscreenButton.onclick = () => {
+                unityInstance.SetFullscreen(1);
+              };
+            }).catch((message) => {
+              alert(message);
+            });
           };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
+          document.body.appendChild(script);
+      }
     </script>
   </body>
 </html>
