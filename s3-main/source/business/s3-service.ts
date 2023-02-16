@@ -1,4 +1,4 @@
-import { DkFiles, DkUnixShell } from "@darkcompet/nodejs-core";
+import { DkFiles, DkUnixShell } from "@ironsky/nodejs-core";
 import AWS from "aws-sdk";
 import { DeleteObjectsRequest, GetObjectRequest, ListObjectsV2Request } from "aws-sdk/clients/s3";
 import fs from "fs";
